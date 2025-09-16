@@ -1,23 +1,28 @@
 function Services() {
   const services = [
     {
-      title: "Direito Civil",
-      description: "Contratos, responsabilidade civil, direito de família e sucessões.",
+      title: "Assessoria Condominial",
+      description: "Gestão jurídica completa para condomínios, assembleias e questões administrativas.",
+      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1200&auto=format&fit=crop"
+    },
+    {
+      title: "Assessoria Empresarial",
+      description: "Consultoria jurídica estratégica para empresas, contratos e compliance corporativo.",
+      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1200&auto=format&fit=crop"
+    },
+    {
+      title: "Direito Penal",
+      description: "Defesa criminal especializada, investigações e acompanhamento processual completo.",
       image: "https://images.unsplash.com/photo-1589994965851-a8f479c573a9?q=80&w=1200&auto=format&fit=crop"
     },
     {
       title: "Direito Trabalhista",
-      description: "Defesa em processos trabalhistas, rescisões e direitos do trabalhador.",
+      description: "Defesa em processos trabalhistas, rescisões e proteção dos direitos laborais.",
       image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1200&auto=format&fit=crop"
     },
     {
-      title: "Direito Empresarial",
-      description: "Constituição de empresas, contratos comerciais e consultoria empresarial.",
-      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1200&auto=format&fit=crop"
-    },
-    {
-      title: "Consultoria Jurídica",
-      description: "Orientação jurídica preventiva e consultoria especializada.",
+      title: "Direito Cível e de Família",
+      description: "Questões familiares, sucessões, contratos e responsabilidade civil.",
       image: "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=1200&auto=format&fit=crop"
     }
   ]
@@ -36,7 +41,7 @@ function Services() {
             Oferecemos assessoria jurídica completa com atendimento personalizado para proteger seus direitos e interesses.
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 sm:gap-8">
           {services.map((service, index) => (
             <article key={index} className="card-hover rounded-3xl overflow-hidden bg-white shadow-lg border border-gray-100">
               <div className="relative overflow-hidden">

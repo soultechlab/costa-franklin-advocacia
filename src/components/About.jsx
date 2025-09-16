@@ -18,13 +18,13 @@ function About() {
             Quem <span className="text-[var(--brand-accent)]">Somos</span>
           </h3>
           <p className="text-lg text-gray-600 leading-relaxed mb-8">
-            Costa Franklin Advocacia é um escritório de advocacia com sólida experiência no mercado jurídico, atuando nas áreas de direito civil, trabalhista e empresarial. Nosso diferencial é o atendimento personalizado e humanizado, sempre focado na necessidade específica de cada cliente.
+            Fundado com base na integridade, no conhecimento jurídico e no compromisso com a justiça, o escritório Costa Franklin Advocacia oferece um atendimento diferenciado e personalizado em diversas áreas do Direito. Nossa equipe trabalha com dedicação, discrição e excelência técnica, sempre buscando os melhores resultados para nossos clientes, seja na prevenção, mediação ou resolução de conflitos. Inspirados pela força da lei e guiados pela ética, estamos prontos para enfrentar os desafios do presente com visão de futuro.
           </p>
           <div className="flex flex-wrap gap-4">
             <a href="#contato" className="pill px-6 py-3 font-semibold btn-primary text-lg">
               Consulta Gratuita
             </a>
-            <a href="mailto:contato@costafranklinadvocacia.com.br" className="pill px-6 py-3 font-semibold text-white hover:opacity-80 transition-all duration-300 text-lg" style={{backgroundColor: '#334155'}}>
+            <a href="mailto:contato@costafranklinadvogados.com.br" className="pill px-6 py-3 font-semibold text-white hover:opacity-80 transition-all duration-300 text-lg" style={{backgroundColor: '#334155'}}>
               E-mail
             </a>
           </div>

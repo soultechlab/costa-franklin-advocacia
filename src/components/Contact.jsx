@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Phone, Mail } from 'lucide-react'
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -47,32 +48,32 @@ function Contact() {
               <div className="space-y-4">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-[var(--brand-accent)]/10 rounded-full flex items-center justify-center">
-                    <span className="text-[var(--brand-accent)] font-bold">☎</span>
+                    <Phone className="text-[var(--brand-accent)] w-5 h-5" />
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900">Telefone</p>
-                    <a href="tel:+5521997627530" className="text-gray-600 hover:text-[var(--brand-accent)] transition">
-                      (21) 99762-7530
+                    <a href="tel:+5521964782828" className="text-gray-600 hover:text-[var(--brand-accent)] transition">
+                      (21) 96478-2828
                     </a>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-[var(--brand-accent)]/10 rounded-full flex items-center justify-center">
-                    <span className="text-[var(--brand-accent)] font-bold">@</span>
+                    <Mail className="text-[var(--brand-accent)] w-5 h-5" />
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900">E-mail</p>
-                    <a href="mailto:contato@costafranklinadvocacia.com.br" className="text-gray-600 hover:text-[var(--brand-accent)] transition break-all">
-                      contato@costafranklinadvocacia.com.br
+                    <a href="mailto:contato@costafranklinadvogados.com.br" className="text-gray-600 hover:text-[var(--brand-accent)] transition break-all">
+                      contato@costafranklinadvogados.com.br
                     </a>
                   </div>
                 </div>
               </div>
               <div className="mt-8 flex gap-4 flex-wrap">
-                <a href="https://wa.me/5521997627530" target="_blank" rel="noreferrer" className="pill px-6 py-3 bg-gradient-to-r from-green-500 to-green-600 text-white hover:from-green-600 hover:to-green-700 font-semibold transition-all duration-300">
+                <a href="https://wa.me/5521964782828" target="_blank" rel="noreferrer" className="pill px-6 py-3 bg-gradient-to-r from-green-500 to-green-600 text-white hover:from-green-600 hover:to-green-700 font-semibold transition-all duration-300">
                   WhatsApp
                 </a>
-                <a href="mailto:contato@costafranklinadvocacia.com.br" className="pill px-6 py-3 btn-secondary font-semibold">
+                <a href="mailto:contato@costafranklinadvogados.com.br" className="pill px-6 py-3 btn-secondary font-semibold">
                   E-mail
                 </a>
               </div>

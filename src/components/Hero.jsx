@@ -15,13 +15,13 @@ function Hero() {
             Advocacia com <span className="text-[var(--brand-accent)]">Excelência</span>
           </h1>
           <p className="mt-4 sm:mt-6 text-lg sm:text-xl text-white/90 leading-relaxed text-balance mobile-text-center">
-            Escritório de advocacia especializado em direito civil, trabalhista e empresarial com atendimento personalizado e próximo.
+            Unindo tradição e inovação na prestação de serviços jurídicos personalizados. Nossa missão é garantir justiça, proteger direitos e construir soluções sólidas para cada cliente.
           </p>
           <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 items-center sm:items-start">
             <a href="#contato" className="pill px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-[var(--brand-accent)] to-[#c9a332] text-black font-semibold text-base sm:text-lg hover:shadow-xl hover:scale-105 transition-all duration-300 w-full sm:w-auto text-center">
               Consulta Gratuita
             </a>
-            <a href="https://wa.me/5521997627530" target="_blank" rel="noreferrer" className="pill px-6 sm:px-8 py-3 sm:py-4 border-2 border-white/80 text-white hover:bg-white hover:text-black transition-all duration-300 font-semibold text-base sm:text-lg backdrop-blur-sm w-full sm:w-auto text-center">
+            <a href="https://wa.me/5521964782828" target="_blank" rel="noreferrer" className="pill px-6 sm:px-8 py-3 sm:py-4 border-2 border-white/80 text-white hover:bg-white hover:text-black transition-all duration-300 font-semibold text-base sm:text-lg backdrop-blur-sm w-full sm:w-auto text-center">
               WhatsApp
             </a>
           </div>

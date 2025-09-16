@@ -18,10 +18,10 @@ function Footer() {
             Escritório de advocacia especializado em direito civil, trabalhista e empresarial com atendimento personalizado.
           </p>
           <div className="mt-4 flex gap-3">
-            <a href="https://wa.me/5521997627530" target="_blank" rel="noreferrer" className="pill px-4 py-2 bg-green-600 text-white hover:bg-green-700 transition-all duration-300">
+            <a href="https://wa.me/5521964782828" target="_blank" rel="noreferrer" className="pill px-4 py-2 bg-green-600 text-white hover:bg-green-700 transition-all duration-300">
               WhatsApp
             </a>
-            <a href="mailto:contato@costafranklinadvocacia.com.br" className="pill px-4 py-2 text-white hover:opacity-80 transition-all duration-300" style={{backgroundColor: '#334155'}}>
+            <a href="mailto:contato@costafranklinadvogados.com.br" className="pill px-4 py-2 text-white hover:opacity-80 transition-all duration-300" style={{backgroundColor: '#334155'}}>
               E-mail
             </a>
           </div>
@@ -32,7 +32,7 @@ function Footer() {
             <li><a href="#servicos" className="hover:text-white">Serviços</a></li>
             <li><a href="#quem-somos" className="hover:text-white">Quem Somos</a></li>
             <li><a href="#contato" className="hover:text-white">Contato</a></li>
-            <li><a href="https://wa.me/5521997627530" target="_blank" rel="noreferrer" className="hover:text-white">WhatsApp</a></li>
+            <li><a href="https://wa.me/5521964782828" target="_blank" rel="noreferrer" className="hover:text-white">WhatsApp</a></li>
           </ul>
         </div>
         <div>
@@ -40,14 +40,14 @@ function Footer() {
           <div className="space-y-4">
             <div>
               <p className="text-white/60 text-sm mb-1">Telefone</p>
-              <a href="tel:+5521997627530" className="text-white hover:text-[var(--brand-accent)] transition font-medium">
-                (21) 99762-7530
+              <a href="tel:+5521964782828" className="text-white hover:text-[var(--brand-accent)] transition font-medium">
+                (21) 96478-2828
               </a>
             </div>
             <div>
               <p className="text-white/60 text-sm mb-1">E-mail</p>
-              <a href="mailto:contato@costafranklinadvocacia.com.br" className="text-white hover:text-[var(--brand-accent)] transition font-medium break-all">
-                contato@costafranklinadvocacia.com.br
+              <a href="mailto:contato@costafranklinadvogados.com.br" className="text-white hover:text-[var(--brand-accent)] transition font-medium break-all">
+                contato@costafranklinadvogados.com.br
               </a>
             </div>
           </div>
