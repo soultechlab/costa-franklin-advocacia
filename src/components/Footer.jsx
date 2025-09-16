@@ -7,9 +7,15 @@ function Footer() {
         <div className="text-center md:text-left">
           <div className="flex items-center justify-center md:justify-start gap-3 mb-4">
             <img
+              src="/src/assets/icon.png"
+              alt="Ícone Costa Franklin Advocacia"
+              className="h-8 sm:h-10 w-auto object-contain md:hidden"
+              onError={(e) => e.target.style.display = 'none'}
+            />
+            <img
               src="/src/assets/logo.svg"
               alt="Logotipo Costa Franklin Advocacia"
-              className="h-6 sm:h-8 w-auto object-contain"
+              className="hidden md:block h-6 sm:h-8 w-auto object-contain"
               onError={(e) => e.target.style.display = 'none'}
             />
             <span className="font-semibold text-white text-sm sm:text-base">Costa Franklin Advocacia</span>
@@ -32,7 +38,7 @@ function Footer() {
             </a>
           </div>
         </div>
-        <div className="text-center md:text-left">
+        <div className="hidden md:block text-center md:text-left">
           <h4 className="font-semibold mb-3 text-white text-sm sm:text-base">Atalhos</h4>
           <ul className="space-y-2 text-white/80 text-xs sm:text-sm">
             <li><a href="#servicos" className="hover:text-white transition">Serviços</a></li>
