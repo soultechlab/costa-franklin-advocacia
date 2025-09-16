@@ -1,6 +1,6 @@
 function Header({ mobileMenuOpen, toggleMobileMenu, closeMobileMenu }) {
   return (
-    <header className="sticky top-0 z-40 backdrop-blur-lg brand-border border-b" style={{backgroundColor: 'rgba(15, 23, 42, 0.95)'}}>
+    <header className="sticky top-0 z-40 backdrop-blur-lg brand-border border-b" style={{backgroundColor: '#0f172a'}}>
       <div className="max-w-7xl mx-auto px-4 py-3 sm:py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
@@ -22,26 +22,20 @@ function Header({ mobileMenuOpen, toggleMobileMenu, closeMobileMenu }) {
           </button>
 
           <nav className="hidden md:flex items-center gap-6 lg:gap-8 text-sm font-medium text-white">
-            <a href="#servicos" className="hover:text-white/70 transition">Serviços</a>
-            <a href="#quem-somos" className="hover:text-white/70 transition">Quem Somos</a>
+            <a href="#hero" className="hover:text-white/70 transition">Início</a>
             <a href="#contato" className="hover:text-white/70 transition">Contato</a>
+            <a href="#quem-somos" className="hover:text-white/70 transition">Quem Somos</a>
+            <a href="#servicos" className="hover:text-white/70 transition">Serviços</a>
           </nav>
 
-          <div className="hidden lg:flex items-center gap-3">
-            <a href="#contato" className="pill px-4 xl:px-6 py-2 xl:py-3 text-sm xl:text-base font-medium btn-primary">Consulta Gratuita</a>
-            <a href="https://astrea.net.br/#/login/BR" target="_blank" rel="noreferrer" className="pill px-4 xl:px-6 py-2 xl:py-3 text-sm xl:text-base font-medium bg-gradient-to-r from-gray-900 to-gray-700 text-white hover:from-gray-800 hover:to-gray-600 transition-all duration-300">Área do Cliente</a>
-          </div>
         </div>
 
         <nav className={`${mobileMenuOpen ? 'block' : 'hidden'} md:hidden mt-4 pt-4 border-t border-white/20 text-white`}>
           <div className="flex flex-col gap-4">
-            <a href="#servicos" onClick={closeMobileMenu} className="hover:text-white/70 transition py-2">Serviços</a>
-            <a href="#quem-somos" onClick={closeMobileMenu} className="hover:text-white/70 transition py-2">Quem Somos</a>
+            <a href="#hero" onClick={closeMobileMenu} className="hover:text-white/70 transition py-2">Início</a>
             <a href="#contato" onClick={closeMobileMenu} className="hover:text-white/70 transition py-2">Contato</a>
-            <div className="flex flex-col gap-3 pt-4">
-              <a href="#contato" onClick={closeMobileMenu} className="pill px-4 py-3 text-sm font-medium btn-primary text-center">Consulta Gratuita</a>
-              <a href="https://astrea.net.br/#/login/BR" target="_blank" rel="noreferrer" className="pill px-4 py-3 text-sm font-medium bg-gradient-to-r from-gray-900 to-gray-700 text-white text-center">Área do Cliente</a>
-            </div>
+            <a href="#quem-somos" onClick={closeMobileMenu} className="hover:text-white/70 transition py-2">Quem Somos</a>
+            <a href="#servicos" onClick={closeMobileMenu} className="hover:text-white/70 transition py-2">Serviços</a>
           </div>
         </nav>
       </div>
