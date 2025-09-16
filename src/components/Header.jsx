@@ -1,13 +1,13 @@
 function Header({ mobileMenuOpen, toggleMobileMenu, closeMobileMenu }) {
   return (
     <header className="sticky top-0 z-40 backdrop-blur-lg brand-border border-b" style={{backgroundColor: '#0f172a'}}>
-      <div className="max-w-7xl mx-auto px-4 py-3 sm:py-4">
+      <div className="max-w-5xl mx-auto px-4 py-0.5 sm:py-1">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
             <img
-              src="/img/LogoSemFundo.png"
+              src="/src/assets/logo.svg"
               alt="Logotipo Costa Franklin Advocacia"
-              className="h-8 sm:h-10 md:h-12 w-auto object-contain"
+              className="h-16 sm:h-24 md:h-28 w-auto object-contain"
               onError={(e) => e.target.style.display = 'none'}
             />
           </div>
