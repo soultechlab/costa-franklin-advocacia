@@ -7,7 +7,7 @@ function Footer() {
         <div className="text-center md:text-left">
           <div className="flex items-center justify-center md:justify-start gap-3 mb-4">
             <img
-              src="/src/assets/icon.png"
+              src="/img/icon.png"
               alt="Ícone Costa Franklin Advocacia"
               className="h-8 sm:h-10 w-auto object-contain"
               onError={(e) => e.target.style.display = 'none'}

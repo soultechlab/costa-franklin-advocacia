@@ -5,13 +5,13 @@ function Header({ mobileMenuOpen, toggleMobileMenu, closeMobileMenu }) {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2 sm:gap-3">
             <img
-              src="/src/assets/logo.png"
+              src="/img/logo.png"
               alt="Logotipo Costa Franklin Advocacia"
               className="h-20 sm:h-24 md:h-28 w-auto object-contain md:hidden"
               onError={(e) => e.target.style.display = 'none'}
             />
             <img
-              src="/src/assets/logo.svg"
+              src="/img/logo.svg"
               alt="Logotipo Costa Franklin Advocacia"
               className="hidden md:block h-20 sm:h-24 md:h-28 w-auto object-contain"
               onError={(e) => e.target.style.display = 'none'}
