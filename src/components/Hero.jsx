@@ -4,7 +4,7 @@ function Hero() {
       <div className="absolute inset-0">
         <img
           src="https://images.unsplash.com/photo-1436450412740-6b988f486c6b?q=80&w=1600&auto=format&fit=crop"
-          alt="Advocacia e Justiça"
+          alt="Escritório de advocacia Costa Franklin - Balança da justiça e livros de direito representando excelência jurídica no Rio de Janeiro"
           className="w-full h-[60vh] sm:h-[70vh] object-cover scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/50 to-black/40 sm:from-black/50 sm:via-black/40 sm:to-black/30"></div>
@@ -12,7 +12,7 @@ function Hero() {
       <div className="relative max-w-7xl mx-auto px-4 h-[60vh] sm:h-[70vh] flex items-center">
         <div className="text-white max-w-full sm:max-w-3xl text-center sm:text-left">
           <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-balance mobile-text-center">
-            Advocacia com <span className="text-[var(--brand-accent)]">Excelência</span>
+            Costa Franklin Advocacia - <span className="text-[var(--brand-accent)]">Excelência</span> em Direito
           </h1>
           <p className="mt-4 sm:mt-6 text-lg sm:text-xl text-white/90 leading-relaxed text-balance mobile-text-center">
             Unindo tradição e inovação na prestação de serviços jurídicos personalizados. Nossa missão é garantir justiça, proteger direitos e construir soluções sólidas para cada cliente.
