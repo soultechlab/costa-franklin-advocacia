@@ -9,13 +9,7 @@ function Footer() {
             <img
               src="/src/assets/icon.png"
               alt="Ícone Costa Franklin Advocacia"
-              className="h-8 sm:h-10 w-auto object-contain md:hidden"
-              onError={(e) => e.target.style.display = 'none'}
-            />
-            <img
-              src="/src/assets/logo.svg"
-              alt="Logotipo Costa Franklin Advocacia"
-              className="hidden md:block h-6 sm:h-8 w-auto object-contain"
+              className="h-8 sm:h-10 w-auto object-contain"
               onError={(e) => e.target.style.display = 'none'}
             />
             <span className="font-semibold text-white text-sm sm:text-base">Costa Franklin Advocacia</span>

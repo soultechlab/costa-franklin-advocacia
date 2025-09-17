@@ -18,7 +18,14 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    alert('Obrigado! Sua mensagem foi enviada.')
+
+    const subject = 'Contato - Costa Franklin Advocacia'
+    const body = `Nome: ${formData.name}\nTelefone: ${formData.phone}\n\nMensagem:\n${formData.message}`
+    const mailtoLink = `mailto:contato@costafranklinadvogados.com.br?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+
+    window.location.href = mailtoLink
+
+    // Limpar o formulário após envio
     setFormData({
       name: '',
       email: '',
