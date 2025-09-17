@@ -12,7 +12,7 @@ function Hero() {
       <div className="relative max-w-7xl mx-auto px-4 h-[60vh] sm:h-[70vh] flex items-center">
         <div className="text-white max-w-full sm:max-w-3xl text-center sm:text-left">
           <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-balance mobile-text-center">
-            Costa Franklin Advocacia - <span className="text-[var(--brand-accent)]">Excelência</span> em Direito
+            Advocacia com <span className="text-[var(--brand-accent)]">Excelência</span>
           </h1>
           <p className="mt-4 sm:mt-6 text-lg sm:text-xl text-white/90 leading-relaxed text-balance mobile-text-center">
             Unindo tradição e inovação na prestação de serviços jurídicos personalizados. Nossa missão é garantir justiça, proteger direitos e construir soluções sólidas para cada cliente.
