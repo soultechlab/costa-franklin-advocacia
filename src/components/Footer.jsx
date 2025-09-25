@@ -15,7 +15,7 @@ function Footer() {
             <span className="font-semibold text-white text-sm sm:text-base">Costa Franklin Advocacia</span>
           </div>
           <p className="mt-3 text-white/70 text-xs sm:text-sm leading-relaxed">
-            Escritório de advocacia especializado em direito civil, trabalhista e empresarial com atendimento personalizado.
+            Escritório de advocacia Full Service especializado em direito empresarial, condominial, trabalhista, penal, cível, família, entre outros ramos do direito, com atendimento personalizado.
           </p>
           <div className="mt-4 flex flex-col sm:flex-row gap-2 sm:gap-3 items-center justify-center md:justify-start">
             <a href="https://wa.me/5521964782828" target="_blank" rel="noreferrer" className="pill px-3 sm:px-4 py-2 transition-all duration-300 flex items-center gap-2 text-xs sm:text-sm w-full sm:w-auto justify-center" style={{background: 'linear-gradient(135deg, #d2ad36 0%, #c9a332 100%)', color: '#111'}}>
