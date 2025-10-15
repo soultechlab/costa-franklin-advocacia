@@ -1,9 +1,9 @@
 function Services() {
   const services = [
     {
-      title: "Assessoria Condominial",
+      title: "Assessoria Condominial e Recuperação de Crédito",
       description: "Gestão jurídica completa para condomínios, assembleias e questões administrativas.",
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1200&auto=format&fit=crop"
+      image: "https://images.unsplash.com/photo-1582407947304-fd86f028f716?q=80&w=1200&auto=format&fit=crop"
     },
     {
       title: "Assessoria Empresarial",
