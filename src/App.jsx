@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
 import Topbar from './components/Topbar'
 import Header from './components/Header'
 import Hero from './components/Hero'
@@ -7,6 +8,7 @@ import About from './components/About'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import WhatsAppButton from './components/WhatsAppButton'
+import RegistroMarcas from './pages/RegistroMarcas'
 
 function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -19,7 +21,8 @@ function App() {
     setMobileMenuOpen(false)
   }
 
-  return (
+  // Homepage Component
+  const HomePage = () => (
     <div className="text-neutral-900">
       <Topbar />
       <Header
@@ -34,6 +37,13 @@ function App() {
       <Footer />
       <WhatsAppButton />
     </div>
+  )
+
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/registro-de-marcas" element={<RegistroMarcas />} />
+    </Routes>
   )
 }
 
