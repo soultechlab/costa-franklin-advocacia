@@ -1,3 +1,5 @@
+import { trackWhatsAppConversion } from '../utils/analytics'
+
 function Hero() {
   return (
     <section id="hero" className="relative overflow-hidden">
@@ -21,7 +23,7 @@ function Hero() {
             <a href="#contato" className="pill px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-[var(--brand-accent)] to-[#c9a332] text-black font-semibold text-base sm:text-lg hover:shadow-xl hover:scale-105 transition-all duration-300 w-full sm:w-auto text-center">
               Consulta Gratuita
             </a>
-            <a href="https://wa.me/5521964782828" target="_blank" rel="noreferrer" className="pill px-6 sm:px-8 py-3 sm:py-4 border-2 border-white/80 text-white hover:bg-white hover:text-black transition-all duration-300 font-semibold text-base sm:text-lg backdrop-blur-sm w-full sm:w-auto text-center">
+            <a href="https://wa.me/5521964782828" target="_blank" rel="noreferrer" onClick={trackWhatsAppConversion} className="pill px-6 sm:px-8 py-3 sm:py-4 border-2 border-white/80 text-white hover:bg-white hover:text-black transition-all duration-300 font-semibold text-base sm:text-lg backdrop-blur-sm w-full sm:w-auto text-center">
               WhatsApp
             </a>
           </div>

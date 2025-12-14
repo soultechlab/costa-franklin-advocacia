@@ -5,6 +5,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import WhatsAppButton from '../components/WhatsAppButton'
 import Topbar from '../components/Topbar'
+import { trackWhatsAppConversion } from '../utils/analytics'
 
 const DireitoCriminal = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -137,6 +138,7 @@ const DireitoCriminal = () => {
               href={whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={trackWhatsAppConversion}
               className="inline-block pill px-8 py-4 bg-gradient-to-r from-[var(--brand-accent)] to-[#c9a332] text-black font-semibold text-sm tracking-wide hover:shadow-xl transition-all duration-300 hover:scale-105"
             >
               FALE COM UM ESPECIALISTA
@@ -209,6 +211,7 @@ const DireitoCriminal = () => {
               href={whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={trackWhatsAppConversion}
               className="inline-block mt-8 pill px-8 py-3 bg-gradient-to-r from-[var(--brand-accent)] to-[#c9a332] text-black font-semibold text-xs tracking-wide hover:shadow-xl transition-all duration-300"
             >
               FALE COM UM ESPECIALISTA
@@ -264,6 +267,7 @@ const DireitoCriminal = () => {
               href={whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={trackWhatsAppConversion}
               className="inline-block pill px-8 py-4 bg-gradient-to-r from-[var(--brand-accent)] to-[#c9a332] text-black font-semibold text-xs tracking-wide hover:shadow-xl transition-all duration-300"
             >
               AGENDE UMA CONSULTA

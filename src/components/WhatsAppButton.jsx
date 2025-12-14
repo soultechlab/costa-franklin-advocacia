@@ -1,10 +1,14 @@
+import { trackWhatsAppConversion } from '../utils/analytics';
+
 function WhatsAppButton() {
+
   return (
     <a
       href="https://wa.me/5521964782828"
       target="_blank"
       rel="noreferrer"
       aria-label="WhatsApp"
+      onClick={trackWhatsAppConversion}
       className="fixed bottom-4 right-4 sm:bottom-5 sm:right-5 pill shadow-lg px-3 py-3 sm:px-4 sm:py-4 bg-gradient-to-r from-[var(--brand-accent)] to-[#c9a332] hover:shadow-xl transition-all duration-300 hover:scale-110 z-50"
     >
       <svg className="w-5 h-5 sm:w-6 sm:h-6 text-black" fill="currentColor" viewBox="0 0 24 24">
