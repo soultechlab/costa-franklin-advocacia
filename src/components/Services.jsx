@@ -1,29 +1,36 @@
+import { Link } from 'react-router-dom'
+
 function Services() {
   const services = [
     {
       title: "Assessoria Condominial",
       description: "Assessoria jurídica completa para condomínios, auxílio em assembleias, demandas judiciais e recuperação de crédito.",
-      image: "https://images.unsplash.com/photo-1582407947304-fd86f028f716?q=80&w=1200&auto=format&fit=crop"
+      image: "https://images.unsplash.com/photo-1582407947304-fd86f028f716?q=80&w=1200&auto=format&fit=crop",
+      link: null
     },
     {
       title: "Assessoria Empresarial",
       description: "Consultoria jurídica estratégica para empresas, contratos e compliance corporativo.",
-      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1200&auto=format&fit=crop"
+      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1200&auto=format&fit=crop",
+      link: null
     },
     {
-      title: "Direito Penal",
+      title: "Direito Criminal",
       description: "Defesa criminal especializada, investigações e acompanhamento processual completo.",
-      image: "https://images.unsplash.com/photo-1589994965851-a8f479c573a9?q=80&w=1200&auto=format&fit=crop"
+      image: "https://images.unsplash.com/photo-1589994965851-a8f479c573a9?q=80&w=1200&auto=format&fit=crop",
+      link: "/direito-criminal"
     },
     {
-      title: "Direito Trabalhista",
-      description: "Defesa em processos trabalhistas, rescisões e proteção dos direitos laborais.",
-      image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1200&auto=format&fit=crop"
+      title: "Registro de Marcas",
+      description: "Proteção jurídica de marcas e acompanhamento integral do processo no INPI.",
+      image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1200&auto=format&fit=crop",
+      link: "/registro-de-marcas"
     },
     {
       title: "Direito Cível e de Família",
       description: "Questões familiares, sucessões, contratos e responsabilidade civil.",
-      image: "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=1200&auto=format&fit=crop"
+      image: "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=1200&auto=format&fit=crop",
+      link: null
     }
   ]
 
@@ -42,22 +49,39 @@ function Services() {
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 sm:gap-8">
-          {services.map((service, index) => (
-            <article key={index} className="card-hover rounded-3xl overflow-hidden bg-white shadow-lg border border-gray-100">
-              <div className="relative overflow-hidden">
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="h-40 sm:h-48 w-full object-cover transition-transform duration-300 hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-              </div>
-              <div className="p-4 sm:p-6">
-                <h3 className="font-bold text-lg sm:text-xl mb-2 sm:mb-3">{service.title}</h3>
-                <p className="text-gray-600 leading-relaxed text-sm sm:text-base">{service.description}</p>
-              </div>
-            </article>
-          ))}
+          {services.map((service, index) => {
+            const CardContent = (
+              <>
+                <div className="relative overflow-hidden">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="h-40 sm:h-48 w-full object-cover transition-transform duration-300 hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                </div>
+                <div className="p-4 sm:p-6">
+                  <h3 className="font-bold text-lg sm:text-xl mb-2 sm:mb-3">{service.title}</h3>
+                  <p className="text-gray-600 leading-relaxed text-sm sm:text-base">{service.description}</p>
+                  {service.link && (
+                    <span className="inline-block mt-3 text-[var(--brand-accent)] font-semibold text-sm hover:underline">
+                      Saiba mais →
+                    </span>
+                  )}
+                </div>
+              </>
+            )
+
+            return service.link ? (
+              <Link key={index} to={service.link} className="card-hover rounded-3xl overflow-hidden bg-white shadow-lg border border-gray-100 block">
+                {CardContent}
+              </Link>
+            ) : (
+              <article key={index} className="card-hover rounded-3xl overflow-hidden bg-white shadow-lg border border-gray-100">
+                {CardContent}
+              </article>
+            )
+          })}
         </div>
       </div>
     </section>

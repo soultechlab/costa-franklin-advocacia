@@ -1,12 +1,12 @@
 import { useState } from 'react'
-import { Shield, Scale, FileText, Search, Clipboard, Building, AlertCircle, CheckCircle, Wrench, ArrowLeft } from 'lucide-react'
+import { Search, Clipboard, FileText, AlertCircle, Scale, Award, ArrowLeft } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import WhatsAppButton from '../components/WhatsAppButton'
 import Topbar from '../components/Topbar'
 
-const RegistroMarcas = () => {
+const DireitoCriminal = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   const toggleMobileMenu = () => {
@@ -18,84 +18,84 @@ const RegistroMarcas = () => {
   }
 
   const whatsappNumber = '5521964782828'
-  const whatsappMessage = 'Olá! Vim pelo Google e gostaria de iniciar um atendimento com um especialista em Registro de Marcas.'
+  const whatsappMessage = 'Olá! Vim pelo Google e gostaria de iniciar um atendimento com um especialista em Direito Criminal.'
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`
 
   const benefits = [
     {
-      icon: Shield,
-      title: 'Sua Marca Merece Proteção',
-      description: 'Muitos empreendedores só percebem a importância do registro quando já enfrentam problemas. Com orientação jurídica, você garante exclusividade e evita que terceiros se aproveitem do seu nome.'
+      icon: Search,
+      title: 'Atendimento Imediato e Orientação na Delegacia',
+      description: 'Atuação 24h para flagrantes, oitivas e medidas urgentes. Preservação de direitos desde o primeiro contato com a autoridade policial.'
     },
     {
       icon: Scale,
-      title: 'Segurança Jurídica Para Seu Negócio',
-      description: 'Sem o registro, qualquer empresa pode usar nome ou logo parecidos. O INPI garante exclusividade e protege sua marca.'
+      title: 'Liberdade Provisória e Habeas Corpus',
+      description: 'Pedidos de fiança, relaxamento de prisão, revogação de preventiva e HC. Atuação ágil para cessar constrangimentos ilegais.'
     },
     {
       icon: FileText,
-      title: 'A Justiça Pode Defender Sua Marca',
-      description: 'Se alguém tenta usar o que é seu, o registro permite agir rápido e de forma segura. Com assessoria especializada, é possível impedir usos indevidos e proteger seu negócio.'
+      title: 'Acompanhamento de Inquérito Policial',
+      description: 'Monitoramento do procedimento investigativo, requerimentos, diligências e defesas técnicas. Atuação estratégica para evitar o oferecimento da denúncia.'
     }
   ]
 
   const services = [
     {
       icon: Search,
-      title: 'Busca de Anterioridade no INPI',
-      description: 'Verificação completa para confirmar se a marca está disponível e evitar conflitos.'
+      title: 'Atendimento Imediato e Orientação na Delegacia',
+      description: 'Atuação 24h para flagrantes, oitivas e medidas urgentes. Preservação de direitos desde o primeiro contato com a autoridade policial.'
     },
     {
       icon: Clipboard,
-      title: 'Protocolo do Pedido de Registro',
-      description: 'Preparação e envio de toda a documentação jurídica necessária.'
+      title: 'Liberdade Provisória e Habeas Corpus',
+      description: 'Pedidos de fiança, relaxamento de prisão, revogação de preventiva e HC. Atuação ágil para cessar constrangimentos ilegais.'
     },
     {
-      icon: Building,
-      title: 'Acompanhamento Integral do Processo',
-      description: 'Monitoramento do pedido no INPI até a decisão final.'
+      icon: FileText,
+      title: 'Acompanhamento de Inquérito Policial',
+      description: 'Monitoramento do procedimento investigativo, requerimentos, diligências e defesas técnicas. Atuação estratégica para evitar o oferecimento da denúncia.'
     },
     {
       icon: AlertCircle,
-      title: 'Resposta a Exigências do INPI',
-      description: 'Atuação técnica quando o órgão solicita ajustes ou esclarecimentos.'
+      title: 'Resposta à Acusação e Defesas Preliminares',
+      description: 'Elaboração de teses defensivas, arrolamento de provas e pedidos de absolvição sumária. Atuação técnica desde o início do processo.'
     },
     {
-      icon: CheckCircle,
-      title: 'Oposições e Defesas',
-      description: 'Elaboração de manifestações contra pedidos de terceiros ou contra objeções.'
+      icon: Scale,
+      title: 'Recursos e Sustentações Orais',
+      description: 'Interposição de apelações, embargos e recursos aos tribunais superiores. Sustentações orais e atuação combativa em segunda instância.'
     },
     {
-      icon: Wrench,
-      title: 'Renovação e Manutenção do Registro',
-      description: 'Gestão dos prazos de renovação e atualização da marca para evitar perda de direitos.'
+      icon: Award,
+      title: 'Execução Penal e Benefícios',
+      description: 'Progressão de regime, remição, livramento condicional, indulto e unificação de penas. Acompanhamento completo para garantir direitos na execução.'
     }
   ]
 
   const faqs = [
     {
-      question: 'O que é uma marca e por que devo registrá-la?',
-      answer: 'A marca é o sinal que identifica o seu produto, serviço ou empresa no mercado. O registro garante exclusividade de uso no Brasil e impede que terceiros utilizem nome ou logo iguais ou semelhantes.'
+      question: 'Fui intimado para depor na delegacia. Preciso ir com advogado?',
+      answer: 'Sim. A presença de um advogado garante seus direitos, orienta sobre o que responder, verifica o teor do inquérito e evita autoincriminações indevidas.'
     },
     {
-      question: 'Quanto tempo demora o processo de registro no INPI?',
-      answer: 'O tempo médio varia entre 6 e 14 meses, dependendo da análise do INPI e da existência de oposições ou exigências.'
+      question: 'Recebi citação para responder a processo criminal. O que faço?',
+      answer: 'Procure um defensor imediatamente. É possível apresentar resposta escrita, juntar provas, indicar testemunhas e pedir absolvição já nas primeiras fases.'
     },
     {
-      question: 'Quais são os custos envolvidos para registrar uma marca?',
-      answer: 'Existem taxas oficiais do INPI e os honorários do escritório. O valor final depende da categoria da marca e do tipo de cliente.'
+      question: 'Posso ser preso em flagrante? Quais são meus direitos?',
+      answer: 'Sim, em flagrante delito. Você tem direito ao silêncio, a comunicar um familiar e a um advogado. O juiz deve analisar conversão em preventiva ou conceder liberdade provisória.'
     },
     {
-      question: 'Posso usar minha marca antes do registro ser aprovado?',
-      answer: 'Sim. Você pode usar normalmente. O registro, porém, é o que garante proteção legal e exclusividade.'
+      question: 'O que é audiência de custódia?',
+      answer: 'É a apresentação do preso a um juiz em até 24 horas para verificar legalidade da prisão, eventuais abusos e a necessidade de liberdade provisória ou medidas cautelares.'
     },
     {
-      question: 'Quais tipos de marcas podem ser registradas?',
-      answer: 'É possível registrar nomes, logos, combinações de nome e logo, marcas figurativas, mistas e tridimensionais, desde que atendam às regras do INPI.'
+      question: 'Sou investigado. Posso pedir acesso ao inquérito?',
+      answer: 'Regra geral, sim. A defesa tem direito a acessar elementos já documentados, garantindo contraditório e ampla defesa, salvo diligências sigilosas em andamento.'
     },
     {
-      question: 'O que acontece se outra empresa registrar um nome igual ou parecido ao meu?',
-      answer: 'A empresa que registrar primeiro terá prioridade. Você pode ser impedido de usar sua marca e até ser obrigado a mudar nome ou identidade visual.'
+      question: 'O que é acordo de não persecução penal (ANPP)?',
+      answer: 'É um acordo com o Ministério Público para crimes sem violência, com pena mínima inferior a 4 anos. Cumpridas condições, o processo é evitado. Requer análise técnica do caso.'
     }
   ]
 
@@ -123,15 +123,15 @@ const RegistroMarcas = () => {
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-[#1B1B1B] to-[#2d2d2d] py-24 md:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{ backgroundImage: 'url(https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1920)' }}></div>
+        <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{ backgroundImage: 'url(https://lbaadvocacia.com.br/wp-content/uploads/2025/12/Victor-Costa-Costa-Franklin-Direito-Criminal-3.png)' }}></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#D8B354] mb-6 leading-tight drop-shadow-lg">
-              Proteja sua marca e garanta seus direitos no INPI
+              Proteção imediata aos seus direitos em todas as fases do processo
             </h1>
             <div className="w-32 h-1.5 bg-[#D8B354] mb-6"></div>
             <p className="text-white text-lg md:text-xl mb-8 leading-relaxed drop-shadow-md">
-              Registrar a marca não é apenas um detalhe administrativo. É uma medida essencial para garantir segurança, exclusividade e blindagem contra concorrentes. Nosso escritório cuida de todo o processo com rigor técnico e acompanhamento contínuo.
+              Defesa penal técnica e discreta, do inquérito ao julgamento, com foco na legalidade, no sigilo e na proteção dos seus direitos.
             </p>
             <a
               href={whatsappLink}
@@ -193,13 +193,16 @@ const RegistroMarcas = () => {
             <div className="w-24 h-1 bg-[#D8B354] mb-6"></div>
             <div className="space-y-4 text-[#363636] text-base leading-relaxed">
               <p>
-                O escritório, liderado pelos Drs. <strong>Felipe Franklin</strong> e <strong>Victor Costa</strong>, é especializado na proteção jurídica de empresas e condomínios. A atuação abrange <strong>Direito Empresarial, Direito Condominial e Registro de Marcas</strong>, entregando suporte estratégico para quem busca segurança, organização e crescimento.
+                O escritório, liderado pelos Drs. <strong>Felipe Franklin</strong> e <strong>Victor Costa</strong>, é dedicado à <strong>defesa criminal</strong> e ao <strong>processo penal</strong>, atuando com prontidão e sigilo em todas as fases: <strong>investigações policiais e inquéritos</strong>, <strong>audiência de custódia</strong>, <strong>prisões em flagrante</strong>, <strong>medidas cautelares</strong>, <strong>habeas corpus</strong>, <strong>acordos de não persecução penal</strong>, <strong>recursos</strong> e <strong>execução penal</strong>.
               </p>
               <p>
-                A equipe trabalha com orientação preventiva, resolução eficiente de conflitos e estruturação jurídica completa para negócios e condomínios. No registro de marcas, oferece acompanhamento integral para garantir a proteção da identidade e dos direitos dos clientes perante o INPI.
+                Nossa prática abrange <strong>crimes econômicos</strong>, <strong>contra a administração pública</strong>, <strong>Lei de Drogas</strong>, <strong>violência doméstica</strong>, <strong>crimes cibernéticos</strong>, <strong>trânsito</strong>, <strong>Tribunal do Júri</strong> e demandas correlatas. Também realizamos <strong>investigação defensiva</strong> e <strong>compliance penal</strong>, com atuação preventiva para reduzir riscos e orientar depoimentos, buscas e apreensões e tratativas com o Ministério Público.
               </p>
               <p>
-                O atendimento se destaca pela clareza, objetividade e compromisso, sempre alinhado às necessidades específicas de cada cliente.
+                O atendimento é <strong>técnico, estratégico e humanizado</strong>, com <strong>disponibilidade 24h</strong> para emergências, absoluto <strong>sigilo profissional</strong> e foco na <strong>proteção das garantias fundamentais</strong> do cliente. Trabalhamos com <strong>clareza, objetividade e compromisso</strong>, alinhando a estratégia ao que cada caso exige.
+              </p>
+              <p>
+                <strong>Fale com um especialista</strong> e conte com uma defesa penal sólida, ética e eficaz.
               </p>
             </div>
             <a
@@ -217,7 +220,7 @@ const RegistroMarcas = () => {
       {/* Services Section */}
       <section className="py-16 md:py-24 bg-gradient-to-b from-white to-[#F8F8F8] relative overflow-hidden">
         <div className="absolute inset-0 opacity-10" style={{
-          backgroundImage: 'url("/images/services-bg.jpg")',
+          backgroundImage: 'url("https://lbaadvocacia.com.br/wp-content/uploads/2025/12/Victor-Costa-Costa-Franklin-Direito-Criminal-2.png")',
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}></div>
@@ -227,7 +230,7 @@ const RegistroMarcas = () => {
               Principais Áreas de Atuação
             </p>
             <h2 className="text-3xl md:text-4xl font-semibold text-[#D8B354] mb-4">
-              Serviços Jurídicos em Registro de Marca
+              Serviços Jurídicos em Direito Criminal
             </h2>
           </div>
 
@@ -273,7 +276,7 @@ const RegistroMarcas = () => {
       <section className="py-16 md:py-24 bg-gradient-to-b from-[#F7F7F7] to-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-semibold text-[#2d2d2d] text-center mb-4">
+            <h2 className="text-3xl md:text-4xl font-semibold text-[#D8B354] text-center mb-4">
               Perguntas Frequentes
             </h2>
             <p className="text-center text-[#4a4a4a] text-lg mb-12">
@@ -285,12 +288,17 @@ const RegistroMarcas = () => {
                 <details
                   key={index}
                   className="bg-white border-2 border-[#D8B354] rounded-lg shadow-md overflow-hidden"
+                  style={{
+                    backgroundImage: 'url("https://lbaadvocacia.com.br/wp-content/uploads/2025/12/Victor-Costa-2-scaled-1.png")',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center'
+                  }}
                 >
-                  <summary className="cursor-pointer p-4 font-medium text-[#2d2d2d] bg-gradient-to-r from-[#D8B354] to-[#C8A951] hover:from-[#C8A951] hover:to-[#D8B354] transition-all duration-300 flex justify-between items-center">
+                  <summary className="cursor-pointer p-4 font-medium text-[#F7F7F7] bg-gradient-to-r from-[#D8B354]/90 to-[#C8A951]/90 hover:from-[#C8A951]/90 hover:to-[#D8B354]/90 transition-all duration-300 flex justify-between items-center">
                     <span className="text-sm">{faq.question}</span>
-                    <span className="text-[#2d2d2d] text-xl">+</span>
+                    <span className="text-[#D8B354] text-xl">+</span>
                   </summary>
-                  <div className="p-4 bg-white text-[#4a4a4a] text-sm leading-relaxed">
+                  <div className="p-4 bg-white/95 text-[#414141] text-sm leading-relaxed">
                     {faq.answer}
                   </div>
                 </details>
@@ -306,4 +314,4 @@ const RegistroMarcas = () => {
   )
 }
 
-export default RegistroMarcas
+export default DireitoCriminal
