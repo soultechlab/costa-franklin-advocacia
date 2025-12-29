@@ -10,6 +10,7 @@ import Footer from './components/Footer'
 import WhatsAppButton from './components/WhatsAppButton'
 import RegistroMarcas from './pages/RegistroMarcas'
 import DireitoCriminal from './pages/DireitoCriminal'
+import AssessoriaCondominial from './pages/AssessoriaCondominial'
 
 function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -45,6 +46,7 @@ function App() {
       <Route path="/" element={<HomePage />} />
       <Route path="/registro-de-marcas" element={<RegistroMarcas />} />
       <Route path="/direito-criminal" element={<DireitoCriminal />} />
+      <Route path="/assessoria-condominial" element={<AssessoriaCondominial />} />
     </Routes>
   )
 }
