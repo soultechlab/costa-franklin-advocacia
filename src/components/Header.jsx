@@ -57,6 +57,13 @@ function Header({ mobileMenuOpen, toggleMobileMenu, closeMobileMenu }) {
                   <div className="text-xs mt-1 opacity-75">Suporte jurídico completo</div>
                 </Link>
                 <Link
+                  to="/assessoria-empresarial"
+                  className="block px-4 py-3 text-gray-800 hover:bg-[#D8B354] hover:text-white transition-colors border-b border-gray-100"
+                >
+                  <div className="font-semibold">Assessoria Empresarial</div>
+                  <div className="text-xs mt-1 opacity-75">Consultoria estratégica</div>
+                </Link>
+                <Link
                   to="/direito-criminal"
                   className="block px-4 py-3 text-gray-800 hover:bg-[#D8B354] hover:text-white transition-colors border-b border-gray-100"
                 >
@@ -88,6 +95,9 @@ function Header({ mobileMenuOpen, toggleMobileMenu, closeMobileMenu }) {
               <div className="text-[#D8B354] font-semibold text-center mb-2">Áreas de Atuação</div>
               <Link to="/assessoria-condominial" onClick={closeMobileMenu} className="hover:text-[#D8B354] transition py-2 px-2 rounded block text-center">
                 Assessoria Condominial
+              </Link>
+              <Link to="/assessoria-empresarial" onClick={closeMobileMenu} className="hover:text-[#D8B354] transition py-2 px-2 rounded block text-center">
+                Assessoria Empresarial
               </Link>
               <Link to="/direito-criminal" onClick={closeMobileMenu} className="hover:text-[#D8B354] transition py-2 px-2 rounded block text-center">
                 Direito Criminal

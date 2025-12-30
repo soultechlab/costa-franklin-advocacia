@@ -12,7 +12,7 @@ function Services() {
       title: "Assessoria Empresarial",
       description: "Consultoria jurídica estratégica para empresas, contratos e compliance corporativo.",
       image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1200&auto=format&fit=crop",
-      link: null
+      link: "/assessoria-empresarial"
     },
     {
       title: "Direito Criminal",

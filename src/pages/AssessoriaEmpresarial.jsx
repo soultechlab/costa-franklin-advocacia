@@ -1,11 +1,11 @@
 import { useState } from "react";
 import {
-  Building2,
-  Users,
-  FileText,
-  Scale,
-  Gavel,
+  Briefcase,
+  FileCheck,
   Shield,
+  Users,
+  TrendingUp,
+  Scale,
   ArrowLeft,
 } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -15,7 +15,7 @@ import WhatsAppButton from "../components/WhatsAppButton";
 import Topbar from "../components/Topbar";
 import { trackWhatsAppConversion } from "../utils/analytics";
 
-const AssessoriaCondominial = () => {
+const AssessoriaEmpresarial = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -28,7 +28,7 @@ const AssessoriaCondominial = () => {
 
   const whatsappNumber = "5521964782828";
   const whatsappMessage =
-    "Olá! Vim pelo Google e gostaria de iniciar um atendimento com um especialista em Assessoria Condominial.";
+    "Olá! Vim pelo Google e gostaria de iniciar um atendimento com um especialista em Assessoria Empresarial.";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
     whatsappMessage
   )}`;
@@ -36,93 +36,93 @@ const AssessoriaCondominial = () => {
   const benefits = [
     {
       icon: Shield,
-      title: "Proteção Jurídica Completa",
+      title: "Segurança Jurídica Para Sua Empresa",
       description:
-        "Garanta a segurança jurídica do seu condomínio com orientação preventiva e resolução eficiente de conflitos.",
+        "Proteção legal completa para todas as operações do seu negócio, minimizando riscos e garantindo conformidade.",
     },
     {
-      icon: Users,
-      title: "Gestão de Assembleias",
+      icon: FileCheck,
+      title: "Contratos Estratégicos",
       description:
-        "Suporte técnico para convocação, condução e documentação de assembleias ordinárias e extraordinárias.",
+        "Elaboração e revisão de contratos comerciais que protegem seus interesses e fortalecem suas relações empresariais.",
     },
     {
-      icon: Gavel,
-      title: "Recuperação de Crédito",
+      icon: TrendingUp,
+      title: "Crescimento Com Conformidade",
       description:
-        "Atuação estratégica na cobrança judicial e extrajudicial de inadimplentes, garantindo a saúde financeira do condomínio.",
+        "Estruturação jurídica adequada para permitir o crescimento sustentável e seguro do seu negócio.",
     },
   ];
 
   const services = [
     {
-      icon: Building2,
-      title: "Elaboração e Revisão de Convenção e Regimento Interno",
+      icon: FileCheck,
+      title: "Elaboração e Revisão de Contratos",
       description:
-        "Criação e atualização de documentos condominiais em conformidade com a legislação vigente.",
+        "Contratos comerciais, prestação de serviços, fornecimento, distribuição, parcerias e demais instrumentos contratuais.",
+    },
+    {
+      icon: Briefcase,
+      title: "Consultoria em Compliance Corporativo",
+      description:
+        "Implementação de políticas de conformidade, código de conduta e programas de integridade empresarial.",
     },
     {
       icon: Users,
-      title: "Assessoria em Assembleias",
+      title: "Direito Societário",
       description:
-        "Suporte completo na convocação, pauta, condução e lavratura de atas de assembleias gerais.",
-    },
-    {
-      icon: FileText,
-      title: "Elaboração de Pareceres Jurídicos",
-      description:
-        "Análise técnica de questões condominiais para embasar decisões administrativas.",
+        "Constituição de empresas, alterações contratuais, entrada e saída de sócios, e dissolução societária.",
     },
     {
       icon: Scale,
-      title: "Cobrança de Inadimplentes",
+      title: "Recuperação de Crédito Empresarial",
       description:
-        "Ações de cobrança extrajudicial e judicial de taxas condominiais e multas em atraso.",
-    },
-    {
-      icon: Gavel,
-      title: "Defesa em Ações Judiciais",
-      description:
-        "Representação do condomínio em processos judiciais e administrativos.",
+        "Cobrança judicial e extrajudicial de valores inadimplidos por clientes e parceiros comerciais.",
     },
     {
       icon: Shield,
-      title: "Consultoria Preventiva",
+      title: "Defesa em Demandas Judiciais",
       description:
-        "Orientação contínua para evitar conflitos e garantir conformidade legal nas decisões administrativas.",
+        "Representação em ações trabalhistas, cíveis, comerciais e administrativas que envolvam a empresa.",
+    },
+    {
+      icon: TrendingUp,
+      title: "Planejamento Jurídico Estratégico",
+      description:
+        "Consultoria preventiva para tomada de decisões estratégicas e mitigação de riscos empresariais.",
     },
   ];
 
   const faqs = [
     {
-      question: "O que é assessoria jurídica condominial?",
+      question: "O que é assessoria jurídica empresarial?",
       answer:
-        "É o serviço de consultoria e representação legal prestado ao condomínio, abrangendo desde a elaboração de documentos até a defesa em processos judiciais e cobrança de inadimplentes.",
+        "É o serviço de consultoria e representação legal prestado às empresas, abrangendo contratos, compliance, questões societárias, trabalhistas e demandas judiciais, com foco na proteção do negócio.",
     },
     {
-      question: "O condomínio é obrigado a ter advogado?",
+      question: "Minha empresa precisa de um advogado fixo?",
       answer:
-        "Não é obrigatório para todas as situações, mas é altamente recomendável. A assessoria jurídica previne problemas, garante conformidade legal e protege o condomínio em questões complexas.",
+        "Embora não seja obrigatório, contar com assessoria jurídica regular evita problemas, garante conformidade legal e permite respostas rápidas a questões que surgem no dia a dia empresarial.",
     },
     {
-      question: "Como funciona a cobrança de condôminos inadimplentes?",
+      question: "Como funciona a revisão de contratos?",
       answer:
-        "Iniciamos com tentativas extrajudiciais de acordo. Persistindo a inadimplência, podemos ajuizar ação de cobrança para recuperar os valores devidos, acrescidos de juros, multa e honorários.",
+        "Analisamos cláusulas, identificamos riscos, sugerimos ajustes e garantimos que o contrato proteja adequadamente os interesses da sua empresa antes da assinatura.",
     },
     {
-      question: "Quem pode contratar o advogado do condomínio?",
+      question: "O que é compliance corporativo?",
       answer:
-        "A contratação é deliberada em assembleia geral e formalizada pelo síndico, que representa legalmente o condomínio.",
+        "É o conjunto de práticas e políticas para garantir que a empresa atue em conformidade com leis e regulamentos, incluindo código de conduta, prevenção à corrupção e gestão de riscos.",
     },
     {
-      question: "O que fazer quando há conflito entre condôminos?",
+      question: "Como recuperar créditos de clientes inadimplentes?",
       answer:
-        "A assessoria jurídica analisa o caso, orienta sobre as medidas cabíveis e, se necessário, representa o condomínio em ações judiciais para resolver o conflito.",
+        "Iniciamos com negociação extrajudicial. Se não houver acordo, ajuizamos ação de cobrança ou execução de título para recuperar os valores devidos, com juros e correção.",
     },
     {
-      question: "Como atualizar a convenção de condomínio?",
+      question: "Qual a diferença entre consultoria preventiva e contenciosa?",
       answer:
-        "A alteração da convenção exige aprovação em assembleia com quórum qualificado. O advogado elabora a minuta, conduz o processo e registra a alteração no cartório de imóveis.",
+        "A consultoria preventiva evita problemas antes que ocorram, por meio de orientação contínua. A contenciosa envolve resolução de conflitos já instalados, como processos judiciais.",
     },
   ];
 
@@ -154,20 +154,19 @@ const AssessoriaCondominial = () => {
           className="absolute inset-0 bg-cover bg-center opacity-30"
           style={{
             backgroundImage:
-              "url(https://images.unsplash.com/photo-1582407947304-fd86f028f716?q=80&w=1920&auto=format&fit=crop)",
+              "url(https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1920&auto=format&fit=crop)",
           }}
         ></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#D8B354] mb-6 leading-tight drop-shadow-lg">
-              Consultoria e Assessoria jurídica em todas as demandas e dúvidas
-              do condomínio
+              Consultoria jurídica estratégica para o crescimento do seu negócio
             </h1>
             <div className="w-32 h-1.5 bg-[#D8B354] mb-6"></div>
             <p className="text-white text-lg md:text-xl mb-8 leading-relaxed drop-shadow-md">
-              Proteção legal, gestão eficiente de assembleias e recuperação de
-              crédito. Garantimos segurança jurídica e conformidade para o seu
-              condomínio.
+              Proteja sua empresa com assessoria jurídica especializada.
+              Contratos seguros, compliance corporativo e suporte completo para
+              todas as operações do seu negócio.
             </p>
             <a
               href={whatsappLink}
@@ -232,34 +231,32 @@ const AssessoriaCondominial = () => {
               <p>
                 O escritório, liderado pelos Drs.{" "}
                 <strong>Felipe Franklin</strong> e <strong>Victor Costa</strong>
-                , é especializado em <strong>assessoria condominial</strong>,
-                oferecendo suporte jurídico completo para condomínios
-                residenciais e comerciais.
+                , é especializado em <strong>assessoria empresarial</strong>,
+                oferecendo suporte jurídico completo para empresas de todos os
+                portes e segmentos.
               </p>
               <p>
                 Nossa atuação abrange{" "}
-                <strong>
-                  elaboração e revisão de convenções e regimentos internos
-                </strong>
-                , <strong>assessoria em assembleias</strong>,{" "}
-                <strong>pareceres jurídicos</strong>,{" "}
-                <strong>cobrança de inadimplentes</strong>,{" "}
-                <strong>defesa em ações judiciais</strong> e{" "}
-                <strong>consultoria preventiva</strong> para garantir
-                conformidade legal e evitar conflitos.
+                <strong>elaboração e revisão de contratos comerciais</strong>,{" "}
+                <strong>compliance corporativo</strong>,{" "}
+                <strong>direito societário</strong>,{" "}
+                <strong>recuperação de crédito empresarial</strong>,{" "}
+                <strong>defesa em demandas judiciais</strong> e{" "}
+                <strong>planejamento jurídico estratégico</strong> para apoiar o
+                crescimento sustentável do seu negócio.
               </p>
               <p>
-                Trabalhamos com orientação estratégica para síndicos e
-                administradoras, oferecendo soluções práticas e eficientes para
-                os desafios do dia a dia condominial. Nossa abordagem é{" "}
-                <strong>técnica, preventiva e humanizada</strong>, sempre focada
-                na proteção dos interesses do condomínio e na promoção de um
-                ambiente harmônico entre os condôminos.
+                Trabalhamos com orientação preventiva e resolutiva, oferecendo
+                soluções práticas e eficientes para os desafios jurídicos que
+                empresas enfrentam diariamente. Nossa abordagem é{" "}
+                <strong>técnica, estratégica e proativa</strong>, sempre focada
+                na proteção dos interesses empresariais e na mitigação de
+                riscos.
               </p>
               <p>
                 <strong>Fale com um especialista</strong> e conte com uma
-                assessoria jurídica sólida, ética e comprometida com a segurança
-                do seu condomínio.
+                assessoria jurídica sólida, ética e comprometida com o sucesso
+                do seu negócio.
               </p>
             </div>
             <a
@@ -281,7 +278,7 @@ const AssessoriaCondominial = () => {
           className="absolute inset-0 opacity-10"
           style={{
             backgroundImage:
-              'url("https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1920&auto=format&fit=crop")',
+              'url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1920&auto=format&fit=crop")',
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -292,7 +289,7 @@ const AssessoriaCondominial = () => {
               Principais Áreas de Atuação
             </p>
             <h2 className="text-3xl md:text-4xl font-semibold text-[#D8B354] mb-4">
-              Serviços Jurídicos em Assessoria Condominial
+              Serviços Jurídicos em Assessoria Empresarial
             </h2>
           </div>
 
@@ -372,4 +369,4 @@ const AssessoriaCondominial = () => {
   );
 };
 
-export default AssessoriaCondominial;
+export default AssessoriaEmpresarial;
