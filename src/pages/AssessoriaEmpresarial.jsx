@@ -160,7 +160,7 @@ const AssessoriaEmpresarial = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#D8B354] mb-6 leading-tight drop-shadow-lg">
-              Consultoria jurídica estratégica para o crescimento do seu negócio
+              Assesoria e Consultoria jurídica estratégica para o crescimento do seu negócio
             </h1>
             <div className="w-32 h-1.5 bg-[#D8B354] mb-6"></div>
             <p className="text-white text-lg md:text-xl mb-8 leading-relaxed drop-shadow-md">
