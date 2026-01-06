@@ -50,6 +50,20 @@ function Header({ mobileMenuOpen, toggleMobileMenu, closeMobileMenu }) {
 
               <div className={`${dropdownOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'} absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border-2 border-[#D8B354] overflow-hidden transition-all duration-200`}>
                 <Link
+                  to="/assessoria-condominial"
+                  className="block px-4 py-3 text-gray-800 hover:bg-[#D8B354] hover:text-white transition-colors border-b border-gray-100"
+                >
+                  <div className="font-semibold">Assessoria Condominial</div>
+                  <div className="text-xs mt-1 opacity-75">Suporte jurídico completo</div>
+                </Link>
+                <Link
+                  to="/assessoria-empresarial"
+                  className="block px-4 py-3 text-gray-800 hover:bg-[#D8B354] hover:text-white transition-colors border-b border-gray-100"
+                >
+                  <div className="font-semibold">Assessoria Empresarial</div>
+                  <div className="text-xs mt-1 opacity-75">Consultoria estratégica</div>
+                </Link>
+                <Link
                   to="/direito-criminal"
                   className="block px-4 py-3 text-gray-800 hover:bg-[#D8B354] hover:text-white transition-colors border-b border-gray-100"
                 >
@@ -79,6 +93,12 @@ function Header({ mobileMenuOpen, toggleMobileMenu, closeMobileMenu }) {
             {/* Mobile Dropdown */}
             <div className="border-t border-b border-white/20 py-2">
               <div className="text-[#D8B354] font-semibold text-center mb-2">Áreas de Atuação</div>
+              <Link to="/assessoria-condominial" onClick={closeMobileMenu} className="hover:text-[#D8B354] transition py-2 px-2 rounded block text-center">
+                Assessoria Condominial
+              </Link>
+              <Link to="/assessoria-empresarial" onClick={closeMobileMenu} className="hover:text-[#D8B354] transition py-2 px-2 rounded block text-center">
+                Assessoria Empresarial
+              </Link>
               <Link to="/direito-criminal" onClick={closeMobileMenu} className="hover:text-[#D8B354] transition py-2 px-2 rounded block text-center">
                 Direito Criminal
               </Link>

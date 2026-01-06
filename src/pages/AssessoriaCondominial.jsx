@@ -1,11 +1,11 @@
 import { useState } from "react";
 import {
-  Search,
-  Clipboard,
+  Building2,
+  Users,
   FileText,
-  AlertCircle,
   Scale,
-  Award,
+  Gavel,
+  Shield,
   ArrowLeft,
 } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -15,7 +15,7 @@ import WhatsAppButton from "../components/WhatsAppButton";
 import Topbar from "../components/Topbar";
 import { trackWhatsAppConversion } from "../utils/analytics";
 
-const DireitoCriminal = () => {
+const AssessoriaCondominial = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -28,103 +28,101 @@ const DireitoCriminal = () => {
 
   const whatsappNumber = "5521964782828";
   const whatsappMessage =
-    "Olá! Vim pelo Google e gostaria de iniciar um atendimento com um especialista em Direito Criminal.";
+    "Olá! Vim pelo Google e gostaria de iniciar um atendimento com um especialista em Assessoria Condominial.";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
     whatsappMessage
   )}`;
 
   const benefits = [
     {
-      icon: Search,
-      title: "Atuação em flagrante e acompanhamento do inquérito policial",
+      icon: Shield,
+      title: "Proteção Jurídica Completa",
       description:
-        "Atuação 24h para flagrantes, acompanhamento de oitivas e medidas urgentes de modo a preservar os direitos dos clientes perante a autoridade policial, bem como acompanhamento e atuação na investigação até o relatório final.",
+        "Garanta a segurança jurídica do seu condomínio com orientação preventiva e resolução eficiente de conflitos.",
     },
     {
-      icon: Scale,
-      title: "Liberdade Provisória e Habeas Corpus",
+      icon: Users,
+      title: "Gestão de Assembleias",
       description:
-        "Pedidos de fiança, relaxamento de prisão, revogação de preventiva e HC. Atuação ágil para cessar constrangimentos ilegais.",
+        "Suporte técnico para convocação, condução e documentação de assembleias ordinárias e extraordinárias.",
     },
     {
-      icon: FileText,
-      title: "Atuação processual especializada",
+      icon: Gavel,
+      title: "Recuperação de Crédito",
       description:
-        "Com vasta experiência, o escritório conta com uma equipe especializada atuando de forma preventiva e defensiva nos processos, com excelência técnica e sigilo profissional, de modo a resguardar os direitos do cliente.",
+        "Atuação estratégica na cobrança judicial e extrajudicial de inadimplentes, garantindo a saúde financeira do condomínio.",
     },
   ];
 
   const services = [
     {
-      icon: Search,
-      title: "Atendimento Imediato e Orientação na Delegacia",
+      icon: Building2,
+      title: "Elaboração e Revisão de Convenção e Regimento Interno",
       description:
-        "Atuação 24h para flagrantes, oitivas e medidas urgentes. Preservação de direitos desde o primeiro contato com a autoridade policial.",
+        "Criação e atualização de documentos condominiais em conformidade com a legislação vigente.",
     },
     {
-      icon: Clipboard,
-      title: "Liberdade Provisória e Habeas Corpus",
+      icon: Users,
+      title: "Assessoria em Assembleias",
       description:
-        "Pedidos de fiança, relaxamento de prisão, revogação de preventiva e HC. Atuação ágil para cessar constrangimentos ilegais.",
+        "Suporte completo na convocação, pauta, condução e lavratura de atas de assembleias gerais.",
     },
     {
       icon: FileText,
-      title: "Acompanhamento de Inquérito Policial",
+      title: "Elaboração de Pareceres Jurídicos",
       description:
-        "Monitoramento do procedimento investigativo, requerimentos, diligências e defesas técnicas. Atuação estratégica para evitar o oferecimento da denúncia.",
-    },
-    {
-      icon: AlertCircle,
-      title: "Resposta à Acusação e Defesas Preliminares",
-      description:
-        "Elaboração de teses defensivas, arrolamento de provas e pedidos de absolvição sumária. Atuação técnica desde o início do processo.",
+        "Análise técnica de questões condominiais para embasar decisões administrativas.",
     },
     {
       icon: Scale,
-      title: "Recursos e Sustentações Orais",
+      title: "Cobrança de Inadimplentes",
       description:
-        "Interposição de apelações, embargos e recursos aos tribunais superiores. Sustentações orais e atuação combativa em segunda instância.",
+        "Ações de cobrança extrajudicial e judicial de taxas condominiais e multas em atraso.",
     },
     {
-      icon: Award,
-      title: "Execução Penal e Benefícios",
+      icon: Gavel,
+      title: "Defesa em Ações Judiciais",
       description:
-        "Progressão de regime, remição, livramento condicional, indulto e unificação de penas. Acompanhamento completo para garantir direitos na execução.",
+        "Representação do condomínio em processos judiciais e administrativos.",
+    },
+    {
+      icon: Shield,
+      title: "Consultoria Preventiva",
+      description:
+        "Orientação contínua para evitar conflitos e garantir conformidade legal nas decisões administrativas.",
     },
   ];
 
   const faqs = [
     {
-      question:
-        "Fui intimado para depor na delegacia. Preciso ir com advogado?",
+      question: "O que é assessoria jurídica condominial?",
       answer:
-        "Sim. A presença de um advogado garante seus direitos, orienta sobre o que responder, verifica o teor do inquérito e evita autoincriminações indevidas.",
+        "É o serviço de consultoria e representação legal prestado ao condomínio, abrangendo desde a elaboração de documentos até a defesa em processos judiciais e cobrança de inadimplentes.",
     },
     {
-      question:
-        "Recebi citação para responder a processo criminal. O que faço?",
+      question: "O condomínio é obrigado a ter advogado?",
       answer:
-        "Procure um defensor imediatamente. É possível apresentar resposta escrita, juntar provas, indicar testemunhas e pedir absolvição já nas primeiras fases.",
+        "Não é obrigatório para todas as situações, mas é altamente recomendável. A assessoria jurídica previne problemas, garante conformidade legal e protege o condomínio em questões complexas.",
     },
     {
-      question: "Posso ser preso em flagrante? Quais são meus direitos?",
+      question: "Como funciona a cobrança de condôminos inadimplentes?",
       answer:
-        "Sim, em flagrante delito. Você tem direito ao silêncio, a comunicar um familiar e a um advogado. O juiz deve analisar conversão em preventiva ou conceder liberdade provisória.",
+        "Iniciamos com tentativas extrajudiciais de acordo. Persistindo a inadimplência, podemos ajuizar ação de cobrança para recuperar os valores devidos, acrescidos de juros, multa e honorários.",
     },
     {
-      question: "O que é audiência de custódia?",
+      question: "Quem pode contratar o advogado do condomínio?",
       answer:
-        "É a apresentação do preso a um juiz em até 24 horas para verificar legalidade da prisão, eventuais abusos e a necessidade de liberdade provisória ou medidas cautelares.",
+        "A contratação é deliberada em assembleia geral e formalizada pelo síndico, que representa legalmente o condomínio.",
     },
     {
-      question: "Sou investigado. Posso pedir acesso ao inquérito?",
+      question: "O que fazer quando há conflito entre condôminos?",
       answer:
-        "Regra geral, sim. A defesa tem direito a acessar elementos já documentados, garantindo contraditório e ampla defesa, salvo diligências sigilosas em andamento.",
+        "A assessoria jurídica analisa o caso, orienta sobre as medidas cabíveis e, se necessário, representa o condomínio em ações judiciais para resolver o conflito.",
     },
     {
-      question: "O que é acordo de não persecução penal (ANPP)?",
+      question: "Como atualizar a convenção de condomínio?",
       answer:
-        "É um acordo com o Ministério Público para crimes sem violência, com pena mínima inferior a 4 anos. Cumpridas condições, o processo é evitado. Requer análise técnica do caso.",
+        "A alteração da convenção exige aprovação em assembleia com quórum qualificado. O advogado elabora a minuta, conduz o processo e registra a alteração no cartório de imóveis.",
     },
   ];
 
@@ -156,19 +154,20 @@ const DireitoCriminal = () => {
           className="absolute inset-0 bg-cover bg-center opacity-30"
           style={{
             backgroundImage:
-              "url(https://lbaadvocacia.com.br/wp-content/uploads/2025/12/Victor-Costa-Costa-Franklin-Direito-Criminal-3.png)",
+              "url(https://images.unsplash.com/photo-1582407947304-fd86f028f716?q=80&w=1920&auto=format&fit=crop)",
           }}
         ></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#D8B354] mb-6 leading-tight drop-shadow-lg">
-              Proteção imediata aos seus direitos em todas as fases do inquérito
-              e do processo
+              Consultoria e Assessoria jurídica em todas as demandas e dúvidas
+              do condomínio
             </h1>
             <div className="w-32 h-1.5 bg-[#D8B354] mb-6"></div>
             <p className="text-white text-lg md:text-xl mb-8 leading-relaxed drop-shadow-md">
-              Defesa penal técnica e completa, do inquérito ao julgamento, com
-              foco na legalidade, no sigilo e na proteção dos seus direitos.
+              Proteção legal, gestão eficiente de assembleias e recuperação de
+              crédito. Garantimos segurança jurídica e conformidade para o seu
+              condomínio.
             </p>
             <a
               href={whatsappLink}
@@ -233,42 +232,34 @@ const DireitoCriminal = () => {
               <p>
                 O escritório, liderado pelos Drs.{" "}
                 <strong>Felipe Franklin</strong> e <strong>Victor Costa</strong>
-                , é dedicado à <strong>defesa criminal</strong> e ao{" "}
-                <strong>processo penal</strong>, atuando com prontidão e sigilo
-                em todas as fases:{" "}
-                <strong>investigações policiais e inquéritos</strong>,{" "}
-                <strong>audiência de custódia</strong>,{" "}
-                <strong>prisões em flagrante</strong>,{" "}
-                <strong>medidas cautelares</strong>,{" "}
-                <strong>habeas corpus</strong>,{" "}
-                <strong>acordos de não persecução penal</strong>,{" "}
-                <strong>recursos</strong> e <strong>execução penal</strong>.
+                , é especializado em <strong>assessoria condominial</strong>,
+                oferecendo suporte jurídico completo para condomínios
+                residenciais e comerciais.
               </p>
               <p>
-                Nossa prática abrange <strong>crimes econômicos</strong>,{" "}
-                <strong>contra a administração pública</strong>,{" "}
-                <strong>Lei de Drogas</strong>,{" "}
-                <strong>violência doméstica</strong>,{" "}
-                <strong>crimes cibernéticos</strong>, <strong>ECA</strong>,{" "}
-                <strong>Tribunal do Júri</strong> e demandas correlatas. Também
-                realizamos <strong>investigação defensiva</strong> e{" "}
-                <strong>compliance penal</strong>, com atuação preventiva para
-                reduzir riscos e orientar depoimentos, buscas e apreensões e
-                tratativas com o Ministério Público.
+                Nossa atuação abrange{" "}
+                <strong>
+                  elaboração e revisão de convenções e regimentos internos
+                </strong>
+                , <strong>assessoria em assembleias</strong>,{" "}
+                <strong>pareceres jurídicos</strong>,{" "}
+                <strong>cobrança de inadimplentes</strong>,{" "}
+                <strong>defesa em ações judiciais</strong> e{" "}
+                <strong>consultoria preventiva</strong> para garantir
+                conformidade legal e evitar conflitos.
               </p>
               <p>
-                O atendimento é{" "}
-                <strong>técnico, estratégico e humanizado</strong>, com{" "}
-                <strong>disponibilidade 24h</strong> para emergências, absoluto{" "}
-                <strong>sigilo profissional</strong> e foco na{" "}
-                <strong>proteção das garantias fundamentais</strong> do cliente.
-                Trabalhamos com{" "}
-                <strong>clareza, objetividade e compromisso</strong>, alinhando
-                a estratégia ao que cada caso exige.
+                Trabalhamos com orientação estratégica para síndicos e
+                administradoras, oferecendo soluções práticas e eficientes para
+                os desafios do dia a dia condominial. Nossa abordagem é{" "}
+                <strong>técnica, preventiva e humanizada</strong>, sempre focada
+                na proteção dos interesses do condomínio e na promoção de um
+                ambiente harmônico entre os condôminos.
               </p>
               <p>
-                <strong>Fale com um especialista</strong> e conte com uma defesa
-                penal sólida, ética e eficaz.
+                <strong>Fale com um especialista</strong> e conte com uma
+                assessoria jurídica sólida, ética e comprometida com a segurança
+                do seu condomínio.
               </p>
             </div>
             <a
@@ -290,7 +281,7 @@ const DireitoCriminal = () => {
           className="absolute inset-0 opacity-10"
           style={{
             backgroundImage:
-              'url("https://lbaadvocacia.com.br/wp-content/uploads/2025/12/Victor-Costa-Costa-Franklin-Direito-Criminal-2.png")',
+              'url("https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1920&auto=format&fit=crop")',
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -301,7 +292,7 @@ const DireitoCriminal = () => {
               Principais Áreas de Atuação
             </p>
             <h2 className="text-3xl md:text-4xl font-semibold text-[#D8B354] mb-4">
-              Serviços Jurídicos em Direito Criminal
+              Serviços Jurídicos em Assessoria Condominial
             </h2>
           </div>
 
@@ -360,18 +351,12 @@ const DireitoCriminal = () => {
                 <details
                   key={index}
                   className="bg-white border-2 border-[#D8B354] rounded-lg shadow-md overflow-hidden"
-                  style={{
-                    backgroundImage:
-                      'url("https://lbaadvocacia.com.br/wp-content/uploads/2025/12/Victor-Costa-2-scaled-1.png")',
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                  }}
                 >
-                  <summary className="cursor-pointer p-4 font-medium text-[#F7F7F7] bg-gradient-to-r from-[#D8B354]/90 to-[#C8A951]/90 hover:from-[#C8A951]/90 hover:to-[#D8B354]/90 transition-all duration-300 flex justify-between items-center">
+                  <summary className="cursor-pointer p-4 font-medium text-[#2d2d2d] bg-gradient-to-r from-[#D8B354] to-[#C8A951] hover:from-[#C8A951] hover:to-[#D8B354] transition-all duration-300 flex justify-between items-center">
                     <span className="text-sm">{faq.question}</span>
-                    <span className="text-[#D8B354] text-xl">+</span>
+                    <span className="text-[#2d2d2d] text-xl">+</span>
                   </summary>
-                  <div className="p-4 bg-white/95 text-[#414141] text-sm leading-relaxed">
+                  <div className="p-4 bg-white text-[#4a4a4a] text-sm leading-relaxed">
                     {faq.answer}
                   </div>
                 </details>
@@ -387,4 +372,4 @@ const DireitoCriminal = () => {
   );
 };
 
-export default DireitoCriminal;
+export default AssessoriaCondominial;

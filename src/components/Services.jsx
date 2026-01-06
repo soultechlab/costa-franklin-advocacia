@@ -6,13 +6,13 @@ function Services() {
       title: "Assessoria Condominial",
       description: "Assessoria jurídica completa para condomínios, auxílio em assembleias, demandas judiciais e recuperação de crédito.",
       image: "https://images.unsplash.com/photo-1582407947304-fd86f028f716?q=80&w=1200&auto=format&fit=crop",
-      link: null
+      link: "/assessoria-condominial"
     },
     {
       title: "Assessoria Empresarial",
-      description: "Consultoria jurídica estratégica para empresas, contratos e compliance corporativo.",
+      description: "Assesoria e Consultoria jurídica estratégica para empresas, contratos e compliance corporativo.",
       image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1200&auto=format&fit=crop",
-      link: null
+      link: "/assessoria-empresarial"
     },
     {
       title: "Direito Criminal",
